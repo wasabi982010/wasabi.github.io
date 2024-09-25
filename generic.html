@@ -11,16 +11,70 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+            /* Base styles */
+            body {
+                text-align: center; /* Center the caption text */
+    /*font-size: 1em; /* Optional: Adjust the font size if needed */
+    /* margin-top: 0px; /* Optional: Add space between the image and the caption */
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 16pt;
+	font-weight: 300;
+	line-height: 1.75; /* Inherit the same font as the main content */
+            }
+            
+            .main img {
+                width: 100%;
+                height: auto; /* Ensures the image retains its aspect ratio */
+            }
+
+            /* Media queries for responsiveness */
+            @media screen and (max-width: 1280px) {
+                .tiles {
+                    margin: -1.25em 0 0 -1.25em;
+                }
+                .tiles article {
+                    width: calc(33.33333% - 1.25em);
+                    margin: 1.25em 0 0 1.25em;
+                }
+            }
+
+            @media screen and (max-width: 980px) {
+                .tiles {
+                    margin: -2.5em 0 0 -2.5em;
+                }
+                .tiles article {
+                    width: calc(100% - 2.5em);
+                    margin: 2.5em 0 0 2.5em;
+                }
+            }
+
+            /* Media query for phones */
+            @media screen and (max-width: 600px) {
+                .tiles {
+                    margin: 0; /* Remove negative margins */
+                }
+                .tiles article {
+                    width: 100%; /* Full width on small screens */
+                    margin: 1em 0; /* Add margin between articles */
+                }
+                .main img {
+                    width: 100%; /* Full width for images */
+                    height: auto; /* Maintain aspect ratio */
+                }
+            }
+        </style>
 	</head>
+
+	
 	
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
 							<h1></h1>
 							<span class="image main"><img src="images/red snake flower.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+							<p></p>
+						
 						</div>
 					</div>
 

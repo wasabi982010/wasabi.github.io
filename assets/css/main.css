@@ -126,7 +126,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
-				font-size: 14pt;
+				font-size: 24pt;
 			}
 
 		}
@@ -134,7 +134,15 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 18pt;
+			}
+
+		}
+
+		@media screen and (max-width: 600px) {
+
+			body, input, select, textarea {
+				font-size: 14pt;
 			}
 
 		}
@@ -361,7 +369,7 @@ input, select, textarea {
     right: 0; /* Align to right */
     z-index: 2; /* Ensure text is above image */
     padding: 1em; /* Padding for spacing */
-    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    background: rgba(255, 255, 255, 0); /* Semi-transparent background */
 }
 
 /* Hover effect for image */
@@ -408,4 +416,15 @@ body:not(.is-touch) .tiles article:hover .content {
         width: 100%; /* Ensure images take full width */
         height: auto; /* Maintain image aspect ratio */
     }
+}
+
+.caption {
+    text-align: center; /* Center the caption text */
+    /*font-size: 1em; /* Optional: Adjust the font size if needed */
+    /* margin-top: 0px; /* Optional: Add space between the image and the caption */
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 16pt;
+	font-weight: 300;
+	line-height: 1.75; /* Inherit the same font as the main content */
+
 }
