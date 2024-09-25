@@ -390,7 +390,22 @@ body:not(.is-touch) .tiles article:hover .content {
         margin: -2.5em 0 0 -2.5em; /* Adjust margin for smaller screens */
     }
     .tiles article {
-        width: calc(50% - 2.5em); /* Adjust article width */
+        width: calc(100% - 2.5em); /* Adjust article width */
         margin: 2.5em 0 0 2.5em; /* Adjust margin */
+    }
+}
+
+/* For phones or smaller devices */
+@media screen and (max-width: 600px) {
+    .tiles {
+        margin: 0; /* Remove negative margins */
+    }
+    .tiles article {
+        width: 100%; /* Full width */
+        margin: 1em 0; /* Add margin between articles */
+    }
+    .tiles img {
+        width: 100%; /* Ensure images take full width */
+        height: auto; /* Maintain image aspect ratio */
     }
 }
