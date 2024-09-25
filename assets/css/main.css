@@ -428,3 +428,11 @@ body:not(.is-touch) .tiles article:hover .content {
 	line-height: 1.75; /* Inherit the same font as the main content */
 
 }
+
+.cropped-image {
+    width: 100%; /* Ensure the image takes the full width */
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    object-position: top; /* Align the image at the top, cropping the bottom */
+    max-height: 70%; /* Set max-height to crop the bottom part */
+}
