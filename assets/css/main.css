@@ -14,7 +14,7 @@ canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
-	padding: 2px;
+	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
@@ -193,7 +193,7 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			h1 {
-				font-size: 1.35em;
+				font-size: 1em;
 			}
 
 		}
