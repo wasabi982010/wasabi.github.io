@@ -25,9 +25,12 @@
 				background-color: rgb(0, 0, 0); /* Optional: Add a semi-transparent background for the title */
 			}
 
-			#main .inner header {
-				text-align: left; /* Center the text horizontally */
-				padding: 10px; /* Add padding to the header */
+			
+			#main .inner h1 {
+				font-size: clamp(4em, 12vw, 8em); /* scales with screen width */
+				font-weight: 600;
+				margin: 0.2em 0; /* small breathing room */
+				padding: 0;      /* remove padding */
 			}
 
 			#main .inner header h1 {
@@ -83,6 +86,26 @@
 				font-size: 2em; /* Increase caption size */
 				font-weight: 400;
 				text-align: center;
+			}
+
+			#main .inner h1 {
+				font-size: clamp(3em, 10vw, 6em);
+				font-weight: 400;
+				margin: 0.2em 0;
+				padding: 0;
+			}
+
+			/* Add spacing fix here */
+			#main .inner header {
+				margin-bottom: 2em;
+			}
+
+			#main .inner p {
+				margin-bottom: 1.5em;
+			}
+
+			.tiles {
+				margin-top: 2em;
 			}
 </style>
 
